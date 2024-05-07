@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="your_cart.css">
+</head>
+<body>
+  <div class="container">
+    <div class="checkout-section">
+      <h2>Checkout</h2>
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="items">
+          <div class="item">
+            <span>Product 1</span>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <span>1</span>
+              <button class="plus">+</button>
+            </div>
+            <span>$100.00</span>
+          </div>
+          <div class="item">
+            <span>Product 2</span>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <span>1</span>
+              <button class="plus">+</button>
+            </div>
+            <span>$50.00</span>
+          </div>
+        </div>
+        <div class="discount">
+          <input type="text" id="discount-code" placeholder="Gift Card/Discount Code">
+          <button id="apply-discount">Apply</button>
+        </div>
+        <div class="totals">
+          <div class="subtotal">
+            <span>Subtotal</span>
+            <span>$150.00</span>
+          </div>
+          <div class="tax">
+            <span>Tax</span>
+            <span>$15.00</span>
+          </div>
+          <div class="shipping">
+            <span>Shipping</span>
+            <span>$10.00</span>
+          </div>
+          <div class="total">
+            <span>Total</span>
+            <span>$175.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="payment-options">
+        <input type="radio" id="credit-card" name="payment-option" value="credit-card" checked>
+        <label for="credit-card">Credit Card</label>
+        <input type="radio" id="paypal" name="payment-option" value="paypal">
+        <label for="paypal">PayPal</label>
+      </div>
+      <form id="credit-card-form" class="payment-form">
+        <div class="form-group">
+          <label for="cardholder-name">Cardholder Name</label>
+          <input type="text" id="cardholder-name" name="cardholder-name" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" required>
+        </div>
+        <div class="form-group">
+          <div class="half-width">
+            <label for="expiration-date">Expiration Date</label>
+            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+          </div>
+          <div class="half-width">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+          </div>
+        </div>
+        <button type="submit">Pay Amount ₹</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

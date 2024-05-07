@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blue;
+}
+section{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.option:hover{
+    background-color: #45a049;
+}
+.form {
+    display: none;
+}
+.form:target {
+    display: block;
+}
+
+
+form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

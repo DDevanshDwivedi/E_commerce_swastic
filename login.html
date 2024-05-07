@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWASTIK.marT user</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <ul>
+                <li><button onclick="changee(0)">Login</button></li>
+                <li><button onclick="changee(1)">New Register</button></li>
+            </ul>
+            <div class="sub">
+                <div class="login-box" id="login-box">
+
+                    <form action="#" method="get">
+                        <h2>Login</h2>
+
+                        <label for="usreType">UserType
+                        </label>
+                        <div class="in-se">
+                            <select name="" id="">
+                                <option value="">Buyer</option>
+                                <option value="">Seller</option>
+                                <option value="">Delivery</option>
+                                <option value="">Emplyee</option>
+                            </select>
+                        </div>
+                        <label for="loginUsername">Username:</label>
+                        <div class="in-se">
+                            <input type="text" id="loginUsername" name="loginUsername" required>
+                        </div>
+                        <label for="loginPassword">Password:</label>
+                        <div class="in-se">
+                            <input type="password" name="loginPassword" required>
+                        </div>
+                        <div class="in-se">
+                            <input type="submit" value="Login">
+                            <input type="reset" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="new-regi" id="new-regi">
+                    <h2>Sign up </h2>
+                    <form action="#" method="get">
+                        <label for="name">Name:</label>
+                        <div class="in-se">
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <label for="email">Email:</label>
+                        <div class="in-se">
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <label for="password">Password:</label>
+                        <div class="in-se">
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="in-se">
+                            <div class="show-poss">
+                                <input class="showinput" type="checkbox" name="" id="ShowPS" onclick="showpsd()">
+                                    <span>Show Password</span>
+                            </div>
+                            
+                        </div>
+                        <label for="Con-password"> confirm Password</label>
+                        <div class="in-se">
+                            <input type="password">
+                        </div>
+                        <div class="in-se">
+                            <input type="submit" name="" id="">
+                            <input type="reset" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sub">
+                
+            </div>
+            <div class="sub">
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
